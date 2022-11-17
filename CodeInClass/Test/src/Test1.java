@@ -1,4 +1,5 @@
 public class Test1 {
-    private int number;
-
+    public static void main(String[] args) {
+        System.out.println("helloworld");
+    }
 }
