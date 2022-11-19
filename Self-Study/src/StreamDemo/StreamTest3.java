@@ -50,8 +50,11 @@ public class StreamTest3 {
 //                }).forEach(s -> System.out.println(s));
 
         //lambda
-        Stream.concat(stream1, stream2)
+        List<Actor> list = Stream.concat(stream1, stream2)
                 .map(s -> new Actor(s.split(",")[0], Integer.parseInt(s.split(",")[1])))
-                .forEach(s -> System.out.println(s));
+                .collect(Collectors.toList());
+
+        System.out.println(list);
+
     }
 }
