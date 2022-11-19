@@ -1,7 +1,6 @@
-package StreamDemo;
+package FunctionDemo;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class FunctionDemo1 {
     public static void main(String[] args) {
