@@ -19,6 +19,7 @@ public class FunctionDemo3 {
         System.out.println("============================================");
 
         // 引用其他类的方法（自己写好的StringOperation)
+        // 静态方法没有this，就算方法写在这个文件里也不能直接使用 this::stringJudge
         list.stream().filter(new StringOperation()::stringJudge).forEach(s -> System.out.println(s));
     }
 }
