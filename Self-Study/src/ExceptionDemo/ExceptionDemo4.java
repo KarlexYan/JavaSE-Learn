@@ -10,18 +10,25 @@ public class ExceptionDemo4 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
 
-        try {
-            System.out.println(arr[10]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            String message = e.getMessage();
-            System.out.println(message);
-        }
+//        try {
+//            System.out.println(arr[10]);
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            String message = e.getMessage();  //Index 10 out of bounds for length 7
+//            System.out.println(message);
+//        }
 
 //        try {
 //            System.out.println(arr[10]);
-//        }catch (Exception e){
-//            e.printStackTrace();
+//        }catch (ArrayIndexOutOfBoundsException e){
+//            String s = e.toString();  //java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 7
+//            System.out.println(s);
 //        }
+
+        try {
+            System.out.println(arr[10]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         System.out.println("测试执行");
     }
