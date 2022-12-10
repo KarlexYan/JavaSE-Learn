@@ -1,38 +1,75 @@
 package PT1;
 
 public class Order {
-    // 订单号
-    private String orderId;
-    // 订单总额
-    private double total;
-    // 订单项数组
-    OrderItem[] items = new OrderItem[5];
+    private String name;
+    private int number;
+    private double price;
 
-    public Order(String orderId) {
-        this.orderId = orderId;
+
+    public Order() {
     }
 
-    public void addItemToItems(OrderItem item) {
-        for (int i = 0; i < items.length; i++) {
-            if (items[i] == null) {
-                items[i] = item;
-                return;
-            }
-        }
+    public Order(String name, int number, double price) {
+        this.name = name;
+        this.number = number;
+        this.price = price;
     }
 
-    public void printOrder() {
-        System.out.println("订单号：" + orderId);
-        System.out.println("书名\t\t单价\t数量");
-        System.out.println("=======================");
+    /**
+     * 获取
+     *
+     * @return name
+     */
+    public String getName() {
+        return name;
+    }
 
-        for (OrderItem item : items) {
-            if (item != null) {
-                System.out.println(item.getName() + "\t\t" + item.getPrice() + "\t\t" + item.getNumber());
-                total = total + item.getNumber() * item.getPrice();
-            }
-        }
-        System.out.println("=========================");
-        System.out.println("总价为：" + total);
+    /**
+     * 设置
+     *
+     * @param name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * 获取
+     *
+     * @return number
+     */
+    public int getNumber() {
+        return number;
+    }
+
+    /**
+     * 设置
+     *
+     * @param number
+     */
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    /**
+     * 获取
+     *
+     * @return price
+     */
+    public double getPrice() {
+        return price;
+    }
+
+    /**
+     * 设置
+     *
+     * @param price
+     */
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String toString() {
+        return "Order{name = " + name + ", number = " + number + ", price = " + price + "}";
     }
 }

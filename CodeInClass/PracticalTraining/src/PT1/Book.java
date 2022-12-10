@@ -1,47 +1,42 @@
 package PT1;
 
 public class Book {
-    // 书的编号
-    private int ID;
-    // 书名
+    private int id;
     private String name;
-    // 书的价格
     private double price;
-    // 库存
-    private int stock;  //库存
+    private int number;
 
 
     public Book() {
     }
 
-    public Book(int ID, String name, double price, int stock) {
-        this.ID = ID;
+    public Book(int id, String name, double price, int number) {
+        this.id = id;
         this.name = name;
         this.price = price;
-        this.stock = stock;
+        this.number = number;
     }
 
     /**
      * 获取
      *
-     * @return ID
+     * @return id
      */
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
     /**
      * 设置
      *
-     * @param ID
+     * @param id
      */
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
     /**
      * 获取
-     *
      * @return name
      */
     public String getName() {
@@ -50,7 +45,6 @@ public class Book {
 
     /**
      * 设置
-     *
      * @param name
      */
     public void setName(String name) {
@@ -59,7 +53,6 @@ public class Book {
 
     /**
      * 获取
-     *
      * @return price
      */
     public double getPrice() {
@@ -68,7 +61,6 @@ public class Book {
 
     /**
      * 设置
-     *
      * @param price
      */
     public void setPrice(double price) {
@@ -78,22 +70,22 @@ public class Book {
     /**
      * 获取
      *
-     * @return stock
+     * @return number
      */
-    public int getStock() {
-        return stock;
+    public int getNumber() {
+        return number;
     }
 
     /**
      * 设置
      *
-     * @param stock
+     * @param number
      */
-    public void setStock(int stock) {
-        this.stock = stock;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public String toString() {
-        return "Book{ID = " + ID + ", name = " + name + ", price = " + price + ", stock = " + stock + "}";
+        return "Book{id = " + id + ", name = " + name + ", price = " + price + ", number = " + number + "}";
     }
 }
