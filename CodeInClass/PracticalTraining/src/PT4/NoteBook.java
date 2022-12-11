@@ -42,7 +42,7 @@ public class NoteBook extends JFrame implements ActionListener {
 
     private void initJFrame() {
         this.setSize(550, 400);
-        this.setTitle("NoteBook by KarlexYan");
+        this.setTitle("记事本");
         this.setAlwaysOnTop(true);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -111,29 +111,20 @@ public class NoteBook extends JFrame implements ActionListener {
         } else if (obj == exitMenu) {
             System.exit(0);
         } else if (obj == revokeMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == shearMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == copyMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == pasteMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == deleteMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == selectAllMenu) {
-            JOptionPane.showMessageDialog(this, "太懒了还没做，敬请期待！");
+            JOptionPane.showMessageDialog(this, "敬请期待！");
         } else if (obj == aboutMenu) {
             JOptionPane.showMessageDialog(this, "这里是严炜轩写的记事本");
-            JDialog jDialog = new JDialog();
-            jDialog.setTitle("V我50恰个肯德基");
-            JLabel jLabel = new JLabel(new ImageIcon("CodeInClass/PracticalTraining/src/PT4/v50.png"));
-            jLabel.setBounds(0, 0, 315, 417);
-            jDialog.getContentPane().add(jLabel);
-            jDialog.setSize(350, 480);
-            jDialog.setAlwaysOnTop(true);
-            jDialog.setLocationRelativeTo(null);
-            jDialog.setModal(true);
-            jDialog.setVisible(true);
+
         }
     }
 
