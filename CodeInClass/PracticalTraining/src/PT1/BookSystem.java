@@ -83,7 +83,7 @@ public class BookSystem {
                 buyBook(id, number);
                 System.out.println("请继续购买图书");
             } else {
-                System.out.println("没得这个编号喔");
+                System.out.println("没得这个编号的书喔");
             }
 
         }
